@@ -2,81 +2,87 @@
 html {
     font-size:10px;
     user-select:none;
-  }
-  body {
-    font-family: aerial, sans-serif;
+}
+
+:root {
+  --color-olive-green: #808000f0;
+}
+body {
+    font-family: "aerial", sans-serif;
     font-size:1.6rem;
     line-height:1.4;
     text-align:center;
     color:333;
     margin:0;
-    background-color:#808000;
-  }
-  /*headings and link*/
-  #title {
+    background-color: var(--color-olive-green);
+    overflow-x: hidden;
+    color: #343434;
+}
+/*headings and link*/
+#title {
     font-size:4rem;
     margin-bottom:0;
-    color:#808000;
-  }
-  h3 {
-    color:#808000;
-  }
-  #tribute-link {
-    color:#808000;
-  }
-  #tribute-link:hover {
-    color:blue;
-  }
-  /*content*/
-  #main {
-    margin: 10px 8px;
-    padding: 10px;
-    border-radius: 5px;
-    background: #eee;
-  }
-  img {
-    max-width: 100%;
-    display: block;
-    height: auto;
-    margin: 0 auto;
-    border:3px solid #808000;
-    border-radius:5px;
-  }
-  #img-div {
-    background: white;
-    padding: 10px;
-    margin: 0;
-  }
-  #img-caption {
-    margin: 15px 0 5px 0;
-    line-height:1.5;
-  }
-  #headline {
-   margin: 25px 0;
-   text-align: center; 
-  }
-  ul {
-    max-width: 610px;
-    margin: 0 auto 0 auto;
-    text-align: left;
-    line-height: 1.6;
-    list-style-type:disc;
-  }
-  li {
-    margin-bottom: 0;
-  }
-  strong {
-    color:#808000;
-  }
-  blockquote {
-    font-style: italic;
-    max-width: 610px;
-    margin: 0 auto 50px auto;
-    text-align: justify;
-  }
-  cite {
-    margin-bottom:0px;
-  }
-  #olive {
-    color:#808000;
-  }
+    color:var(--color-olive-green);
+}
+h3:last-child, #tribute-link {
+  color: var(--color-olive-green);
+}
+#tribute-link:hover {
+  color:rgb(34, 78, 198);
+}
+/*content*/
+#main {
+  margin: 10px 8px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #e2e2e2;
+}
+#tribute-info p {
+  text-align: justify;
+  padding: 0 5rem;
+}
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  border:3px solid var(--color-olive-green);
+  border-radius:5px;
+}
+#img-div {
+  background: #ededed;
+  padding: 10px;
+  margin: 0;
+}
+#img-caption {
+  margin: 15px 0 5px 0;
+  line-height:1.5;
+}
+#headline {
+  margin: 25px 0;
+  text-align: center; 
+}
+ul {
+  max-width: 610px;
+  margin: 0 auto 0 auto;
+  text-align: left;
+  line-height: 1.6;
+  list-style-type:disc;
+}
+li {
+  margin-bottom: 0;
+}
+strong {
+  color: var(--color-olive-green);
+}
+blockquote {
+  max-width: 610px;
+  margin: 0 auto 50px auto;
+  text-align: justify;
+}
+cite {
+  margin-bottom:0px;
+}
+#olive {
+  color: var(--color-olive-green);
+}
