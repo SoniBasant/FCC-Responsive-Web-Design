@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="TD.css">
+</head>
+<body>
+      <nav id="navbar">
+        <header>JS Documentation</header>
+        <ul>
+          <li><a class="nav-link first-border" href="#Introduction">Introduction</a></li>
+          <li>
+            <a class="nav-link" href="#Basics">Basics</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#Comments">Comments</a>
+          </li>
+          <li><a class="nav-link" href="#Literals">Literals</a></li>
+          <li><a class="nav-link" href="#Array_Literals">Array Literals</a></li>
+          <li>
+            <a class="nav-link" href="#Boolean_Literals">Boolean Literals</a></li>
+          <li><a class="nav-link" href="#Integer_Literals">Integer Literals</a></li>
+          <li><a class="nav-link" href="#Floating_Point_Literals">Floating Point Literals</a></li>
+          <li><a class="nav-link" href="#Object_Literals">Object Literals</a></li>
+          <li><a class="nav-link" href="#RegExp_Literals">RegExp Literals</a></li>
+          <li><a class="nav-link" href="#String_Literals">String Literals</a></li>
+          <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+      </nav>
+         
+      <main id="main-doc">
+        <section class="main-section" id="Introduction">
+          <header>Introduction</header>
+          <article>
+          <p>
+              JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive (e.g., having complex animations, clickable buttons, popup menus, etc.). There are also more advanced server side versions of JavaScript such as Node.js, which allow you to add more functionality to a website than downloading files (such as realtime collaboration between multiple computers). Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.
+            </p>
+      
+            <p>
+              JavaScript contains a standard library of objects, such as <b>Array</b>, <b>Date</b>, and <b>Math</b>, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:
+            </p>
+            <ul>
+              <li>
+                <i>Client-side JavaScript</i> extends the core language by supplying objects to control a browser and its <i>Document Object Model</i> (DOM). For example, client-side extensions allow an application to place elements on an HTML form and respond to user events such as mouse clicks, form input,
+                and page navigation.
+              </li>
+              <li>
+                <i>Server-side JavaScript</i> extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side
+      extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.
+              </li>
+            </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Basics">
+          <header>Basics</header>
+          <article>
+          <p>JavaScript borrows most of its syntax from Java, C, and C++, but it has also been influenced by Awk, Perl, and Python.
+      
+      JavaScript is case-sensitive and uses the Unicode character set. For example, the word Früh (which means "early" in German) could be used as a variable name.</p>
+          <code>let Früh = "foobar"</code>
+          <p>But, the variable <mark>früh</mark> is not the same as <mark>Früh</mark> because JavaScript is case sensitive.</p>
+      
+      <p>In JavaScript, instructions are called statements and are separated by semicolons (;).</p>
+      
+      <p>A semicolon is not necessary after a statement if it is written on its own line. But if more than one statement on a line is desired, then they must be separated by semicolons.</p>
+          <p>It is considered best practice, however, to always write a semicolon after a statement, even when it is not strictly needed. This practice reduces the chances of bugs getting into the code.</p>
+      
+      <p>The source text of JavaScript script gets scanned from left to right, and is converted into a sequence of input elements which are tokens, control characters, line terminators, comments, or whitespace. (Spaces, tabs, and newline characters are considered whitespace.)</p>
+          </article>
+        </section>
+        <section class="main-section" id="Comments">
+           <header>Comments</header>
+          <article>
+            <p>The syntax of <strong>comments</strong> is the same as in C++ and in many other languages:</p>
+            <code>// a one line comment
+      
+      /* this is a longer,
+       * multi-line comment
+       */
+      
+      /* You can't, however, /* nest comments */ SyntaxError */</code>
+            </article>
+        </section>
+        <section class="main-section" id="Literals">
+           <header>Literals</header>
+          <article>
+            <p>Literals represent values in JavaScript. These are fixed values—not variables—that you literally provide in your script. This section describes the following types of literals:</p>
+            <ul>
+              <li>Array Literals</li>
+              <li>Boolean Literals</li>
+              <li>Floating-Point Literals</li>
+              <li>Numeric Literals</li>
+              <li>Object Literals</li>
+              <li>RegExp Literals</li>
+              <li>String Literals</li>
+              </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Array_Literals">
+           <header>Array Literals</header>
+          <article>
+            <p>An array literal is a list of zero or more expressions, each of which represents an array element, enclosed in square brackets (<mark>[ ]</mark>). When you create an array using an array literal, it is initialized with the specified values as its elements, and its <mark>length</mark> is set to the number of arguments specified.</p>
+      
+      <p>The following example creates the <mark>coffees</mark> array with three elements and a <mark>length</mark> of three:</p>
+          <code>let coffees = ['French Roast', 'Colombian', 'Kona'];</code>
+          <p>If an array is created using a literal in a top-level script, JavaScript interprets the array each time it evaluates the expression containing the array literal. In addition, a literal used in a function is created each time the function is called.</p>
+            </article>
+        </section>
+        <section class="main-section" id="Boolean_Literals">
+           <header>Boolean Literals</header>
+          <article>
+            <p>The Boolean type has two literal values: <mark>true</mark> and <mark>false</mark>.</p>
+            <p><strong>Note:</strong> Do not confuse the primitive Boolean values true and false with the true and false values of the Boolean object.</p>
+      
+      <p>The Boolean object is a wrapper around the primitive Boolean data type. See Boolean for more information.</p>
+            </article>
+        </section>
+         <section class="main-section" id="Integer_Literals">
+           <header>Integer Literals</header>
+          <article>
+            <p>Integer and <mark>BigInt</mark> literals can be written in decimal (base 10), hexadecimal (base 16), octal (base 8) and binary (base 2).</p>
+            <ul>
+              <li>A decimal integer literal is a sequence of digits without a leading <mark>0</mark> (zero).</li>
+              <li>A leading <mark>0</mark> (zero) on an integer literal, or a leading <mark>0o</mark> (or <mark>0O</mark>) indicates it is in octal. Octal integer literals can include only the digits <mark>0</mark>–<mark>7</mark>.</li>
+              <li>A leading <mark>0x</mark> (or <mark>0X</mark>) indicates a hexadecimal integer literal. Hexadecimal integers can include digits (<mark>0</mark>–<mark>9</mark>) and the letters <mark>a</mark>–<mark>f</mark> and <mark>A</mark>–<mark>F</mark>. (The case of a character does not change its value. Therefore: <mark>0xa</mark> = <mark>0xA</mark> = <mark>10</mark> and <mark>0xf</mark> = <mark>0xF</mark> = <mark>15</mark>.)</li>
+              <li>A leading <mark>0b</mark> (or <mark>0B</mark>) indicates a binary integer literal. Binary integer literals can only include the digits <mark>0</mark> and <mark>1</mark>.</li>
+              <li>A trailing n suffix on an integer literal indicates a BigInt literal. The integer literal can use any of the above bases. Note that leading-zero octal syntax like <mark>0123n</mark> is not allowed, but <mark>0o123n</mark> is fine.</li>
+            </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Floating_Point_Literals">
+           <header>Floating Point Literals</header>
+          <article>
+            <p>A floating-point literal can have the following parts:</p>
+            <ul>
+              <li>An unsigned decimal integer,</li>
+              <li>A decimal point ("<mark>.</mark>"),</li>
+              <li>A fraction (another decimal number),</li>
+              <li>An exponent.</li>
+            </ul>
+            <p>The exponent part is an "e" or "E" followed by an integer, which can be signed (preceded by "+" or "-"). A floating-point literal must have at least one digit, and either a decimal point or "e" (or "E").</p>
+      
+      <p>More succinctly, the syntax is:</p>
+      <code>[digits].[digits][(E|e)[(+|-)]digits]</code>
+            </article>
+        </section>
+         <section class="main-section" id="Object_Literals">
+           <header>Object Literals</header>
+          <article>
+            <p>An object literal is a list of zero or more pairs of property names and associated values of an object, enclosed in curly braces (<mark>{}</mark>).</p>
+            <p>The following is an example of an object literal. The first element of the <mark>car</mark> object defines a property, <mark>myCar</mark>, and assigns to it a new string, "<mark>Saturn</mark>"; the second element, the <mark>getCar</mark> property, is immediately assigned the result of invoking the function <mark>(carTypes("Honda"))</mark>; the third element, the <mark>special</mark> property, uses an existing variable (<mark>sales</mark>).</p>
+            <code>var sales = 'Toyota';
+      
+      function carTypes(name) {
+        if (name === 'Honda') {
+          return name;
+        } else {
+          return "Sorry, we don't sell " + name + ".";
+        }
+      }
+      
+      var car = { myCar: 'Saturn', getCar: carTypes('Honda'), special: sales };
+      
+      console.log(car.myCar);   // Saturn
+      console.log(car.getCar);  // Honda
+      console.log(car.special); // Toyota</code>
+            <p>Additionally, you can use a numeric or string literal for the name of a property or nest an object inside another. The following example uses these options.</p>
+            <code>var car = { manyCars: {a: 'Saab', b: 'Jeep'}, 7: 'Mazda' };
+      
+      console.log(car.manyCars.b); // Jeep
+      console.log(car[7]); // Mazda</code>
+            </article>
+        </section>
+         <section class="main-section" id="RegExp_Literals">
+           <header>RegExp Literals</header>
+          <article>
+            <p>A regex literal is a pattern enclosed between slashes. The following is an example of a regex literal.</p>
+            <code>var re = /ab+c/;</code>
+            </article>
+        </section>
+         <section class="main-section" id="String_Literals">
+           <header>String Literals</header>
+          <article>
+            <p>A string literal is zero or more characters enclosed in double (<mark>"</mark>) or single (<mark>'</mark>) quotation marks. A string must be delimited by quotation marks of the same type (that is, either both single quotation marks, or both double quotation marks).</p>
+      
+      <p>The following are examples of string literals:</p>
+            <code>'foo'
+      "bar"
+      '1234'
+      'one line \n another line'
+      "John's cat"</code>
+            <p>You should use string literals unless you specifically need to use a <mark>String</mark> object.</p>
+            </article>
+        </section>
+         <section class="main-section" id="Reference">
+           <header>Reference</header>
+          <article>
+            <p>All the documentation are taken from <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">MDN</a>. Right belong to respectful owners. No copyright infringement intended. </p>
+            </article>
+        </section>
+      </main>
+</body>
+</html>
