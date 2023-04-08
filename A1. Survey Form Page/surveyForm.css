@@ -1,0 +1,242 @@
+/*body and background*/
+*,
+*::before,
+*::after {
+  box-sizing:border-box;
+}
+html {
+  user-select:none;
+}
+:root {
+  --border: 1px solid #3e3e3e;
+  --color-font: #3d3d3d;
+}
+body {
+  font-size:1rem;
+  font-family: "Georgia", sans-serif;
+  color:white;
+  overflow-x: hidden;
+}
+body::before {
+  content:"";
+  position:fixed;
+  z-index:-1;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  background-image:linear-gradient(to top,
+   rgba(0, 0, 255,  0.1),
+   rgba(0, 0, 255, 0.1)), 
+   url(https://sonibasant.github.io/FCC-Responsive-Web-Design/A1.%20Survey%20Form%20Page/Images/backGImg.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+.container {
+  width:100%;
+  margin:auto;
+}
+@media only screen and (min-width:768px) {
+  .container {
+    max-width:720px;
+  }
+}
+/*headings*/
+.header {
+  padding:0;
+  margin-bottom:2rem;
+}
+.text-center {
+  text-align:center;
+}
+/*form*/
+#survey-form {
+  font-size:1.15rem;
+}
+.form-group {
+  margin:5px;
+  padding:5px; 
+}
+label {
+  display:flex;
+  align-items:flex-start;
+  margin-bottom:10px;
+  padding:15px auto 5px 10px;
+  margin-left:10px;
+}
+form {
+  /* display:inline-block; */
+  background-color:hsla(120,100%,50%,0.3);
+  border-radius:0.5rem;
+  width:48%;
+  float:left;
+  margin-left:0%;
+}
+.single-line-input {
+  padding:5px auto 5px 10px;  
+  margin-left:10px;
+  width:70%;
+  border-radius:2.5px;
+  border: var(--border);
+  font-size:1.2rem;
+  outline: none;
+  background-color: #e4e4e4;
+}
+select {
+  margin-left:10px;
+  border-radius:2.5px;
+  border: var(--border);
+  font-size:1.1rem;
+  outline: none;
+  color: var(--color-font);
+}
+option {
+  display:flex;
+  align-items:center;
+  margin-bottom:0.6rem;
+  padding:10px;
+  
+}
+.inside-p {
+  padding-left:10px;
+}
+.required:after {
+  content:"*";
+  color:red;
+}
+.single-line-input:hover, option:hover {
+  background-color:#f3f3f3;
+  color: var(--color-font);
+}
+/*review input*/
+textarea {
+  margin-left:10px;
+  max-width:90%;
+  width:90%;
+  border-radius:2.5px;
+  border: var(--border);
+  max-width:300;
+  resize:none;
+  font-size:0.9rem;
+  outline: none;
+  color: var(--color-font);
+}
+/*submit*/
+.submit-button {
+  position:relative;
+  top:50%;
+  left:43%;
+  border-radius:4px;
+  border: var(--border);
+  cursor: pointer;
+  padding: 0.2rem 1rem;
+}
+.submit-button:hover {
+  box-shadow:1px 1px 2px;
+}
+/*quote*/
+quote {
+  /* display:inline-block; */
+  float: right;
+  width:48%;
+  max-height:70%;
+  background-color:hsla(120,100%,50%,0.3);
+  border-radius:0.5rem;
+}
+blockquote {
+  font-style: italic;
+  line-height:23px;
+}
+/*pictures*/
+.row {
+  display:flex;
+  flex-wrap:wrap;
+  margin-top:60%;
+  margin-left:23.2rem;
+}
+.column {
+  max-width:50%;
+}
+.column img {
+  width:100%;
+  height:auto;
+  border-radius:0.5rem;
+}
+.zoom {
+  transition: transform .2s;
+  margin: 0 auto;
+}
+.zoom:hover {
+  transform: scale(1.5);
+}
+/*credit for pictures*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  align-items:center;
+  justify-content: center;
+}
+
+#creditBtn {
+  padding: 0.3rem 1.4rem;
+  margin: 1rem 0;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  background-color:white;
+  border: none;
+  border-radius: 5px;
+  color: var(--color-font);
+  outline: none;
+}
+
+#creditContent {
+  display: none;
+  background-color:hsla(120,100%,50%,0.3);
+  padding:1rem;
+  border-radius:5px;  
+  line-height:23px;
+  min-height: 3.5rem;
+}
+
+#creditContent.active {
+  display: block;
+}
+
+
+@media only screen and (max-width:840px) {
+  form {
+    width:95%;
+    position:absolute;
+    float:center;
+    display:block;
+  }
+  quote {
+    width:100%;
+    margin-top:78.5rem;
+    float:center;
+    display:block;
+  }
+  .row {
+    display:flex;
+    margin-top:101.2rem;
+    width:100%;
+    height:auto;
+    align-content:left;
+    margin-left:-0.1rem;
+  }
+  .column img {
+  display:flex;
+  width:100%;
+  height:auto;
+  border-radius:0.5rem;
+  }
+  footer {
+    width:100%;
+    margin-top: 0.5rem;
+    float:center;
+  }
+} 

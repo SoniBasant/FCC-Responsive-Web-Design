@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Basant Soni">
+    <meta name="keywords" content="Survey form, Frontend projects, pure css, html, html5, javascript, js, Basant Soni,
+     GitHub, sonibasant, northeast, north-east, tourism, basic projects, front-end projects, exotic culture Photo, form, 
+     kaziranga, naga culture, Gautam Buddha, root bridge/">
+    <title>Survey Form Page</title>
+    <link rel="stylesheet" href="surveyForm.css">
+    <script defer src="surveyForm.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">
+                Northeast Tourist Survey Form
+            </h1>
+            <p id="description" class="text-center">
+                Your feedback will help us to improve our services for your next visit
+            </p>
+        </header>
+        
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name" class="text-center required">Name</label>
+                <input 
+                    type="text"
+                    placeholder="Type Your Name"
+                    name="name"
+                    id="name"
+                    class="single-line-input"
+                    required     
+                />
+            </div>
+            <div class="form-group">
+                <label id="email-label" class="required" for="email" >email</label>
+                <input 
+                    type="email"
+                    placeholder="Type Your Email"
+                    name="email"
+                    id="email"
+                    class="single-line-input"
+                    required     
+                />
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Age</label>
+                <input 
+                    type="number"
+                    placeholder="Age"
+                    name="age"
+                    id="number"
+                    min="10"
+                    max="99" 
+                    class="single-line-input"
+                />
+            </div>
+            <div class="form-group">
+                <p class="inside-p">How many people accompanied you?</p>
+                <select id="dropdown" name="quantity" required>
+                    <option disabled selected value>Choose one</option>
+                    <option value="single">Single</option>
+                    <option value="couple">Couple</option>
+                    <option value="family">Family</option>
+                    <option value="group">Group</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p class="inside-p">In which states you travelled? <span class="clubed">(Check all that apply)</span></p> 
+                <label for="arunachal-p">
+                    <input 
+                        value="arunachal"
+                        type="checkbox"
+                        name="state"
+                        class="input-checkbox-state"
+                    >Arunachal Pradesh
+                </label>
+                <label for="assam">
+                    <input 
+                        value="assam"
+                        type="checkbox"
+                        name="state"
+                        class="input-checkbox-state"
+                    >Assam
+                </label>
+                <label for="manipur">
+                    <input 
+                        value="manipur"
+                        type="checkbox"
+                        name="state"
+                        class="input-checkbox-state"
+                    >Manipur
+                </label>
+                <label for="meghalaya">
+                    <input 
+                        value="meghalaya"
+                        type="checkbox"
+                        name="state"
+                        class="input-checkbox-state"
+                    >Meghalaya
+                </label>
+                <label for="mizoram">
+                    <input 
+                        value="mizoram"
+                        type="checkbox"
+                        name="state"
+                        class="input-checkbox-state"
+                    >Mizoram
+                </label>
+                <label for="nagaland">
+                    <input 
+                        value="nagaland"
+                        type="checkbox"
+                        name="state"
+                        class="input-checkbox-state"
+                    >Nagaland
+                </label>
+                <label for="sikkim">
+                    <input 
+                        value="sikkim"
+                        type="checkbox"
+                        name="state"
+                        class="input-checkbox-state"
+                    >Sikkim
+                </label>
+                <label for="tripura">
+                    <input 
+                        value="tripura"
+                        type="checkbox"
+                        name="state"
+                        class="input-checkbox-state"
+                    >Tripura
+                </label>
+            </div>
+            <div class="form-group">
+                <p class="inside-p">How was your experience?</p>
+                <label for="best">
+                    <input 
+                        class="input-radio"
+                        type="radio"
+                        name="experience"
+                        value="best"
+                        checked
+                    >Come again and tell others about it
+                </label>
+                <label for="average">
+                    <input 
+                        class="input-radio"
+                        type="radio"
+                        name="experience"
+                        value="best"
+                    >It is good feeling to come here
+                </label>
+                <label for="bad">
+                    <input 
+                        class="input-radio"
+                        type="radio"
+                        name="experience"
+                        value="best"
+                    >Tell you later
+                </label>
+            </div>
+            <div class="form-group">
+                <p class="inside-p">Which one attract you the most? (Check all that apply)</p> 
+                <label for="parks">
+                    <input 
+                        value="parks"
+                        type="checkbox"
+                        name="tourism-type"
+                        class="input-checkbox"
+                    >National Parks
+                </label>
+                <label for="culture">
+                    <input 
+                        value="culture"
+                        type="checkbox"
+                        name="tourism-type"
+                        class="input-checkbox"
+                    >Tribal Culture
+                </label>
+                <label for="dharmic">
+                    <input 
+                        value="dharmic"
+                        type="checkbox"
+                        name="tourism-type"
+                        class="input-checkbox"
+                    >Dharmic Places
+                </label>
+                <label for="historic">
+                    <input 
+                        value="historic"
+                        type="checkbox"
+                        name="tourism-type"
+                        class="input-checkbox"
+                    >Historical Places
+                </label>
+                <label for="natural">
+                    <input 
+                        value="natural"
+                        type="checkbox"
+                        name="tourism-type"
+                        class="input-checkbox"
+                    >Lakes, Mountains and Forest
+                </label>
+            </div>
+            <div class="form-group">
+                <p class="inside-p" spellcheck="true">Any comments / suggestions?</p>
+                <textarea 
+                    class="input-textarea"
+                    name="comment"
+                    placeholder="Enter your comment">
+                </textarea>
+            </div>
+            <div class="form-group">
+                <button 
+                    type="submit"
+                    id="submit"
+                    class="submit-button"
+                    >Submit
+                </button>
+            </div>
+        </form>
+        <quote>
+            <blockquote class="about">
+                <p><q>All the states of the North East region are blessed with natural scenic beauty, 
+                    distinct historical cultural and ethnic heritage. All this offers tremendous scope 
+                    for tourism in the region. There is also a great scope for mountaineering, trekking 
+                    and adventure tourism in the region. If developed and promoted well, this can emerge 
+                    as the biggest employer in the region. It can also add to the growth and income of the region.
+                </q></p>
+                <cite>-- Prime Minister Shri Narendra Modi
+            </blockquote>
+        </quote>
+        <div class="row">
+            <div class="column">
+                <img 
+                    src="https://sonibasant.github.io/FCC-Responsive-Web-Design/A1.%20Survey%20Form%20Page/Images/col1-img1.jpg" 
+                    alt="People in traditional dress" 
+                    class="zoom"
+                >
+            
+                <img 
+                    src="https://sonibasant.github.io/FCC-Responsive-Web-Design/A1.%20Survey%20Form%20Page/Images/col1-img2.jpg" 
+                    alt="Three stage waterfall"
+                    class="zoom"
+                >
+
+                <img 
+                    src="https://sonibasant.github.io/FCC-Responsive-Web-Design/A1.%20Survey%20Form%20Page/Images/col1-img3.jpg" 
+                    alt="Gautam Buddha"
+                    class="zoom"
+                >
+            
+            </div>
+            <div class="column">
+                <img 
+                    src="https://sonibasant.github.io/FCC-Responsive-Web-Design/A1.%20Survey%20Form%20Page/Images/col2-img1.jpg" 
+                    alt="Lake with beautiful animal and scenary background"
+                    class="zoom"
+                >
+
+                <img 
+                    src="https://sonibasant.github.io/FCC-Responsive-Web-Design/A1.%20Survey%20Form%20Page/Images/col2-img2.jpg" 
+                    alt="People marching in traditional attire"
+                    class="zoom"
+                >
+
+                <img 
+                    src="https://sonibasant.github.io/FCC-Responsive-Web-Design/A1.%20Survey%20Form%20Page/Images/col2-img3.jpg" 
+                    alt="Kaziranga National Park animals"
+                    class="zoom"
+                >
+            
+                <img 
+                    src="https://sonibasant.github.io/FCC-Responsive-Web-Design/A1.%20Survey%20Form%20Page/Images/col2-img4.jpg" 
+                    alt="Famous root bridge"
+                    class="zoom"
+                >
+            
+            </div>
+        </div>
+        
+        <footer>
+            <div>
+                <button id="creditBtn" type="button">
+                    Click to see Photo Credit
+                </button>
+            </div>
+
+            <p id="creditContent">
+                All pictures are taken from different twitter accounts. Original owner of pictures 
+                may/may not be the same person. Right belong to respectful owners. 
+                No copyright infringement intended.
+                <br>
+                Background-picture:- @smriti_deori
+                <br>
+                Picture collage:-
+                <br>
+                @in_northeast | @MyHomeIndia | @opangjamirmetsubo | @pfoze_koda | @Mizoram_Tourism 
+                | @rajatpTOI | @momo_irengbam | @kaziranga_
+            </p>
+        
+        </footer>
+    </div>
+          
+</body>
+</html>
