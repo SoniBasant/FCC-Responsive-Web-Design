@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Basant Soni">
+    <meta name="keywords" content="Product landing page, Frontend projects, pure css, html, html5, 
+    Basant Soni, GitHub, sonibasant, paintings, logo, color keepers, basic projects, front-end projects, 
+    video, icon, fontawesome, Mandana, Madhubani, Gaun Art, Water color, colorkeepers /">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="productLP.css">
+    <script defer src="https://kit.fontawesome.com/5d81005354.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="page-container">
+        <header id="header">  
+            <img 
+                id="header-img" 
+                src="https://sonibasant.github.io/FCC-Responsive-Web-Design/A2.%20Product%20Landing%20Page/Images/Color%20Keepers%20Logo.png" 
+                alt="Color Keepers Logo">
+            </img>
+            <nav id="nav-bar">
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="#products">Product</a></li>
+                    <li><a class="nav-link" href="#video">Video</a></li>
+                    <li><a class="nav-link" href="#buy">Buy It</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="contact">
+            <p id="title">Let's bring some colors into your home</p> 
+            <form id="form" action="#">
+                <input 
+                    name="email"
+                    type="email"
+                    placeholder="Type your email *"
+                    id="email"
+                    required
+                />
+                <button 
+                    type="submit"
+                    id="submit"
+                    >
+                        Submit
+                </button>
+            </form>
+        </section>  
+
+        <main class="main">
+            <section id="products">
+                <div class="group">
+                    <div class="icon">
+                        <i class="fas fa-database fa-5x"></i>
+                    </div>
+                    <div class="lines">
+                        <h2>Types of product</h2>
+                        <p>We make sketch, painting, paper craft, decorations etc. </p>
+                    </div>
+                </div>
+            </section>
+            <section id="products">
+                <div class="group">
+                    <div class="icon">
+                        <i class="fas fa-cubes fa-5x"></i>
+                    </div>
+                    <div class="lines">
+                        <h2>Styles of painting</h2>
+                        <p>Many populer styles such as Kalamkari, Warli, Mandana, Madhubani, 
+                            Gond, Abstract, Creative Portrait, Pencil art</p>
+                    </div>
+                </div>
+            </section>
+            <section id="products">
+                <div class="group">
+                    <div class="icon">
+                        <i class="fas fa-cart-plus fa-5x"></i>
+                    </div>
+                    <div class="lines">
+                        <h2>Shipping</h2>
+                        <p>As per demand of the customaer, painting can be on canvas, paper 
+                            and can be with glass-fitted or without.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <div>
+            <section id="making_video">
+                <video 
+                    id="video"
+                    height="300"
+                    src="https://sonibasant.github.io/FCC-Responsive-Web-Design/A2.%20Product%20Landing%20Page/Video/Video-Book.mp4"
+                    frameborder="0"
+                    controls
+                    allowfullscreen>
+                </video>
+            </section>
+            <p id="video_title">Video: Paper Craft</p>
+        </div>
+
+        <section id="buy">
+            <div class="items">
+                <div class="label">
+                    <h2>1200/- INR</h2>
+                </div>
+                <img 
+                    class="price_img" 
+                    src="https://sonibasant.github.io/FCC-Responsive-Web-Design/A2.%20Product%20Landing%20Page/Images/Madhubani.jpg" 
+                    alt="madhubani"
+                />
+                <button class="btn">SELECT</button>
+            </div>
+
+            <div class="items">
+                <div class="label">
+                    <h2>1000/- INR</h2>
+                </div>
+                <img 
+                    class="price_img" 
+                    src="https://sonibasant.github.io/FCC-Responsive-Web-Design/A2.%20Product%20Landing%20Page/Images/Three-Women.jpg" 
+                    alt="three women"
+                />
+                <button class="btn">SELECT</button>
+            </div>
+
+            <div class="items">
+                <div class="label">
+                    <h2>1000/- INR</h2>
+                </div>
+                <img 
+                    class="price_img" 
+                    src="https://sonibasant.github.io/FCC-Responsive-Web-Design/A2.%20Product%20Landing%20Page/Images/Krishna-and-Balram.jpg" 
+                    alt="Krishna and Balram"
+                />
+                <button class="btn">SELECT</button>
+            </div>
+
+            <div class="items">
+                <div class="label">
+                    <h2>600/-  INR</h2>
+                </div>
+                <img 
+                    class="price_img" 
+                    src="https://sonibasant.github.io/FCC-Responsive-Web-Design/A2.%20Product%20Landing%20Page/Images/Mandana-Ganesh.jpg" 
+                    alt="Mandana Ganesh"
+                />
+                <button class="btn">SELECT</button>
+            </div>
+        </section>
+
+        <footer>
+            <nav id="nav_footers">
+                <ul>
+                    <li class="social"><p id="footer_line">Follow me on: </p></li>
+                    <ul class="social">
+                        <li><a href="#" class="social_media"><i class="fab fa-instagram"></i></a></li>
+                        <li><p>@colorkeepers</p></li>
+                    </ul>
+                    <ul class="social">
+                        <li><a href="#" class="social_media"><i class="fab fa-twitter"></i></a></li>
+                        <li><p>@colorkeepers</p></li>
+                    </ul>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+      
+</body>
+</html>
