@@ -1,8 +1,8 @@
 # FreeCodeCamp - Responsive Web Design Projects
 
-These are solutions to the [Responsive Web Design Certificate course on FreeCodeCamp](https://codepen.io/sonibasant). FreeCodeCamp (FCC) help you to learn Web Development from the very basic with hands-on practice. After learning concepts, you need to make some web pages. Tasks in projects are defined by FCC and we need to complete those tasks. After successful testing of all projects, you will get certificate.
+These are solutions to the [Responsive Web Design Certificate course on FreeCodeCamp](https://www.freecodecamp.org/learn/responsive-web-design/). FreeCodeCamp (FCC) help you to learn Web Development from the very basic with hands-on practice. After learning concepts, you need to make some web pages. Tasks in projects are defined by FCC and we need to complete those tasks. After successful testing of all projects, you will get certificate.
 
-[Here is mine.](https://www.freecodecamp.org/certification/SoniBasant/responsive-web-design)
+Here is mine [certificate](https://www.freecodecamp.org/certification/SoniBasant/responsive-web-design).
 
 ## Table of contents
 
@@ -40,13 +40,13 @@ I made projects on -
 
 ### Links
 
-| No. | Type of Project         | Project Name          | Live Link                                                                                             |
-| --: | ---------------------- | --------------------- | ----------------------------------------------------------------------------------------------------- |
+| No. | Type of Project         | Project Name          | Live Link                                                                                                     |
+| --: | ----------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------- |
 | A0. | Tribute Page            | General Bipin Rawat   | [Link](https://sonibasant.github.io/FCC-Responsive-Web-Design/A0.%20Tribute%20Page/tribute.html)              |
 | A1. | Survey Form             | NorthEast Survey Form | [Link](https://sonibasant.github.io/FCC-Responsive-Web-Design/A1.%20Survey%20Form%20Page/surveyForm.html)     |
-| A2. | Product Landing Page    | Color Keepers         | [Link](https://sonibasant.github.io/FCC-Responsive-Web-Design/A2.%20Product%20Landing%20Page/productLP.html) |
+| A2. | Product Landing Page    | Color Keepers         | [Link](https://sonibasant.github.io/FCC-Responsive-Web-Design/A2.%20Product%20Landing%20Page/productLP.html)  |
 | A3. | Technical Documentation | JavaScript Literals   | [Link](https://sonibasant.github.io/FCC-Responsive-Web-Design/A3.%20Technical%20Documentation%20Page/TD.html) |
-| A4. | Portfolio Page          | Portfolio             | [Link](https://sonibasant.github.io/FCC-Responsive-Web-Design/A4.%20Portfolio%20Page/portfolioPage.html) |
+| A4. | Portfolio Page          | Portfolio             | [Link](https://sonibasant.github.io/FCC-Responsive-Web-Design/A4.%20Portfolio%20Page/portfolioPage.html)      |
 
 ## My process
 
