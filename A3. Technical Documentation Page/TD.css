@@ -19,7 +19,7 @@ body {
     margin: 0;
     color: var(--color);
     background-color: #fdfdfd;
-    font-family: 'Open Sans', Arial, sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     line-height: 1.5;
 }
 
