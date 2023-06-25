@@ -16,9 +16,11 @@ This is solution to the Technical Documentation Page Project of [Responsive Web 
 
 ## Overview
 
-This **Technical Documentation Page Project** is about **JavaScript Literals**. Using the reference of [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide), I made this project on JavaScipt Literals. I used a lot of semantic and screen readable elements on content to make it structured, bold, coloured background, italic as per the requirement.
+This **Technical Documentation Page Project** is about **JavaScript Literals**. Using the reference of [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide), I made this project on JavaScipt Literals.
 
-Documentation also have an interective navigation bar. I used JavaScript to show/hide navigation.
+I used a lot of semantic and screen readable elements on content to make it structured, bold, coloured background, italic as per the requirement.
+
+Documentation also have an interective navigation bar. I used JavaScript to show/hide navigation. You can also click on the screen to hide navigation.
 
 ### Screenshot
 
@@ -26,15 +28,18 @@ Documentation also have an interective navigation bar. I used JavaScript to show
 
 ### Links
 
-Click on this [live link](https://sonibasant.github.io/FCC-Responsive-Web-Design/A3.%20Technical%20Documentation%20Page/TD.html) to see the project.
+- Solution URL: [Source Code](https://github.com/SoniBasant/FCC-Responsive-Web-Design/tree/main/A3.%20Technical%20Documentation%20Page)
+
+- Live Site URL: [Live Link](https://sonibasant.github.io/FCC-Responsive-Web-Design/A3.%20Technical%20Documentation%20Page/TD.html)
 
 ## My process
 
-This is Technical Documentation project is different than the previous projects. It included bulk quantity of text. As too much style can distract the reader, so my main focus was on the text, to make it look good while reading. I also used JavaScript to hide/show navigation so that the view area focussed on the content.
+This Technical Documentation project is different than the previous projects. It include bulk quantity of text. As too much style can distract the reader, so my main focus was on the text and to make it look good while reading. I also used JavaScript to hide / show navigation so you can get full screen for the content.
 
 ### Built with
 
 - Semantic HTML5 markup
+
 - CSS custom properties
 - Vanilla JavaScript
 - Desktop-first workflow
@@ -42,7 +47,8 @@ This is Technical Documentation project is different than the previous projects.
 
 ### What I learned
 
-- navbar
+- navbar arrengements
+
 - id selector, class selector, descendant selector
 - @media query
 - flex properties
@@ -53,6 +59,7 @@ This is Technical Documentation project is different than the previous projects.
 After learning about semantic elements, I use them to replace _div_, like -
 
 - header
+
 - main
 - section
 - article
@@ -61,18 +68,22 @@ After learning about semantic elements, I use them to replace _div_, like -
 For better screen reading, I used-
 
 - strong
+
 - mark
 - em
 
 ### Continued development
 
-Need to work on navigation, so that it will disappear after clicking on the page. I will learn UI/UX in my Frontend Web Development journey. Let's see how I will improve this documentation page. 🏃‍♂️🏃‍♂️
+**Latest Update :** Work on navigation, so that it will disappear after clicking on the page.
+
+I will learn UI/UX in my Frontend Web Development journey. Let's see how I will improve this documentation page. 🏃‍♂️🏃‍♂️
 
 Your suggestions are welcome. 🙌
 
 ### Useful resources
 
 - [freecodecamp](https://www.freecodecamp.org/) - All the problems I solved. Helped me a lot. 🙌
+
 - [w3schools](https://www.w3schools.com) - This helped me throughout my journey. Still doing. 🙂
 
 ## Author
@@ -80,6 +91,7 @@ Your suggestions are welcome. 🙌
 Basant Soni 👨‍💻
 
 - GitHub - [@SoniBasant](https://github.com/SoniBasant)
+
 - Frontend Mentor - [@SoniBasant](https://www.frontendmentor.io/profile/SoniBasant)
 - CodePen - [@SoniBasant](https://codepen.io/sonibasant)
 - Hashnode - [@SoniBasant](https://sonibasant.hashnode.dev/)
